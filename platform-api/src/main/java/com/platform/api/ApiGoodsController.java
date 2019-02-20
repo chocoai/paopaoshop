@@ -302,7 +302,9 @@ public class ApiGoodsController extends ApiBaseAction {
             @ApiImplicitParam(name = "brandId", value = "品牌Id", paramType = "path", required = true),
             @ApiImplicitParam(name = "isNew", value = "新商品", paramType = "path", required = true),
             @ApiImplicitParam(name = "isHot", value = "热卖商品", paramType = "path", required = true)})
-    @IgnoreAuth
+//    maxiaoqiang edit start
+//    @IgnoreAuth
+//    maxiaoqiang edit end
     @PostMapping(value = "list")
     public Object list(@LoginUser UserVo loginUser, Integer categoryId,
                        Integer brandId, String keyword, Integer isNew, Integer isHot,

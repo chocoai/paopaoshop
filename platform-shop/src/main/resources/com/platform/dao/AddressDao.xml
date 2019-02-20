@@ -48,6 +48,9 @@
         nideshop_user.username shop_user_name
         from nideshop_address LEFT JOIN nideshop_user ON nideshop_address.user_id = nideshop_user.id
         WHERE 1=1
+        <if test="userId != null and userId.trim() != ''">
+            and nideshop_user.id = #{userId}
+        </if>
         <if test="userName != null and userName != ''">
             AND nideshop_address.user_name LIKE concat('%', #{userName},'%')
         </if>

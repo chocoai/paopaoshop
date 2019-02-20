@@ -3,10 +3,10 @@ $(function () {
         url: '../searchhistory/list',
         colModel: [
             {label: 'id', name: 'id', index: 'id', key: true, hidden: true},
-            {label: '关键字', name: 'keyword', index: 'keyword', width: 80},
+            {label: '关键字', name: 'keyword', index: 'keyword', width: 80, "align":"center"},
             // {label: '搜索来源', name: 'from', index: 'from', width: 80 },
-            {label: '搜索时间', name: 'addTime', index: 'add_time', width: 80},
-            {label: '会员', name: 'userName', index: 'user_name', width: 80}]
+            {label: '搜索时间', name: 'addTime', index: 'add_time', width: 80, "align":"center"},
+            {label: '会员', name: 'userName', index: 'user_name', width: 80, "align":"center"}]
     });
 });
 

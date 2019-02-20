@@ -3,9 +3,9 @@ $(function () {
         url: '../footprint/list',
         colModel: [
             {label: 'id', name: 'id', index: 'id', key: true, hidden: true},
-            {label: '会员', name: 'userName', index: 'user_name', width: 80},
-            {label: '商品', name: 'goodsName', index: 'goods_name', width: 80},
-            {label: '记录时间', name: 'addTime', index: 'add_time', width: 80}]
+            {label: '会员', name: 'userName', index: 'user_name', width: 80, "align":"center"},
+            {label: '商品', name: 'goodsName', index: 'goods_name', width: 80, "align":"center"},
+            {label: '记录时间', name: 'addTime', index: 'add_time', width: 80, "align":"center"}]
     });
 });
 
