@@ -10,25 +10,25 @@ $(function () {
                 return transImg(value);
             }
         }, {
-            label: '描述', name: 'simpleDesc', index: 'simple_desc', width: 120
+            label: '描述', name: 'simpleDesc', index: 'simple_desc', width: 160
         }, {
             label: '图片', name: 'picUrl', index: 'pic_url', width: 60, 'align':'center', formatter: function (value) {
                 return transImg(value);
             }
         }, {
-            label: '排序', name: 'sortOrder', index: 'sort_order', width: 80, 'align':'center'
+            label: '排序', name: 'sortOrder', index: 'sort_order', width: 40, 'align':'center'
         }, {
-            label: '显示', name: 'isShow', index: 'is_show', width: 80, 'align':'center', formatter: function (value) {
+            label: '显示', name: 'isShow', index: 'is_show', width: 40, 'align':'center', formatter: function (value) {
                 return transIsNot(value)
             }
         }, {
             label: '展示价格', name: 'floorPrice', index: 'floor_Price', width: 80, 'align':'center'
         }, {
-            label: 'app显示图片', name: 'appListPicUrl', index: 'app_list_pic_url', width: 80, 'align':'center', formatter: function (value) {
+            label: 'app显示图片', name: 'appListPicUrl', index: 'app_list_pic_url', width: 60, 'align':'center', formatter: function (value) {
                 return transImg(value);
             }
         }, {
-            label: '新品牌', name: 'isNew', index: 'is_new', width: 80, 'align':'center', formatter: function (value) {
+            label: '新品牌', name: 'isNew', index: 'is_new', width: 40, 'align':'center', formatter: function (value) {
                 return transIsNot(value)
             }
         }, {
@@ -36,7 +36,7 @@ $(function () {
                 return transImg(value);
             }
         }, {
-            label: '新品牌排序', name: 'newSortOrder', index: 'new_sort_order', width: 80, 'align':'center'
+            label: '新品牌排序', name: 'newSortOrder', index: 'new_sort_order', width: 40, 'align':'center'
         }]
     });
 });
