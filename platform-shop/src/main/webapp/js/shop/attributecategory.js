@@ -3,9 +3,9 @@ $(function () {
         url: '../attributecategory/list',
         colModel: [
             {label: 'id', name: 'id', index: 'id', key: true, hidden: true},
-            {label: '名称', name: 'name', index: 'name', width: 80},
+            {label: '名称', name: 'name', index: 'name', width: 80, "align":"center"},
             {
-                label: '是否可用', name: 'enabled', index: 'enabled', width: 80, formatter: function (value, options, row) {
+                label: '是否可用', name: 'enabled', index: 'enabled', width: 80, "align":"center", formatter: function (value, options, row) {
                     return value === 0 ?
                         '<span class="label label-danger">禁用</span>' :
                         '<span class="label label-success">启用</span>';
