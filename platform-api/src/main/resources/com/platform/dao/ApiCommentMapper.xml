@@ -24,6 +24,7 @@
             left join nideshop_comment_picture cp on cp.comment_id = c.id
         </if>
         where 1 = 1
+          and c.status = 0
         <if test="type_id != null and type_id != ''">
             and c.type_id = #{type_id}
         </if>

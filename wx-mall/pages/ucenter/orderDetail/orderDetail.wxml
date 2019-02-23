@@ -6,15 +6,13 @@
             <view class="l">实付：<text class="cost">￥{{orderInfo.actual_price}}</text></view>
             <view class="r">
                 <view wx:if="{{orderInfo.handleOption.pay}}">
-                  <view class="btn" bindtap="cancelOrder">取消订单</view>
                   <view class="btn active" bindtap="payOrder">去付款</view>
                 </view>
                 <view wx:elif="{{orderInfo.handleOption.confirm}}">
-                  <view class="btn" bindtap="cancelOrder">取消订单</view>
                   <view class="btn active" bindtap="confirmOrder">确认收货</view>
                 </view>
-                <view wx:else>
-                  <view class="btn active" bindtap="cancelOrder">取消订单</view>
+                <view wx:if="{{orderInfo.handleOption.cancel}}">
+                  <view class="btn" bindtap="cancelOrder">取消订单</view>
                 </view>
             </view>
         </view>
@@ -37,6 +35,11 @@
                     </view>
                     <view class="attr">{{item.goods_specifition_name_value||''}}</view>
                     <view class="price">￥{{item.retail_price}}</view>
+                </view>
+                <view wx:if="{{orderInfo.handleOption.comment}}">
+                  <navigator url="/pages/commentPost/commentPost?typeId=0&valueId={{item.goods_id}}">
+                    <view style='margin-top:19rpx; height:64.5rpx; line-height:64.5rpx; text-align:center; padding:0 20rpx; border-radius:5rpx; font-size:26rpx; color:#fff; background:#b4282d;'>商品评论</view>
+                  </navigator>
                 </view>
             </view>
         </view>
