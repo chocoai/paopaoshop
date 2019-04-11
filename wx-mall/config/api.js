@@ -1,6 +1,8 @@
-const root = '/platform/api/';
+const root = '/api/';
+// const root = '/platform/api/';
 
-const API_BASE_URL = 'https://paopao1021.com:8443' + root;
+const API_BASE_URL = 'http://localhost:8080' + root;
+// const API_BASE_URL = 'https://paopao1021.com:8443' + root;
 module.exports = {
     IndexUrlNewGoods: API_BASE_URL + 'index/newGoods', //新品首发
     IndexUrlHotGoods: API_BASE_URL + 'index/hotGoods', //热卖商品

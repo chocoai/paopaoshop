@@ -24,9 +24,6 @@ Page({
 
     let userInfo = wx.getStorageSync('userInfo');
     let token = wx.getStorageSync('token');
-    if (userInfo && token) {
-      return;
-    }
     wx.login({
       success: function(res) {
         if (res.code) {
@@ -36,6 +33,9 @@ Page({
         }
       }
     });
+    if (userInfo && token) {
+      return;
+    }
   },
 
   bindGetUserInfo: function(e) {
